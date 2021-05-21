@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)file:///D:/JH/code/masterchief.html -->
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="Fox Village" content="Découverte du Village des renards">
+        <title>Fox Village</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="fox_village.css">
+        <style>A {text-decoration: none;} </style>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+          crossorigin=""></script>
+    </head>
+    <body>
+        <div id="parent"> 
+            <div id="droite1-gosse"><a href="#GALERIE">Galerie</a>
+            </div>
+            
+            <div id="gauche1-gosse">
+                <a href="#histoire">Histoire du lieu</a>
+            </div>   
+            <div id="cerner">
+                <div id="imageG"><img src="fox_village_files/image/test_la_hautG.png">
+                </div>
+                <div id="mid-gosse"><h1 id="TITRE"><u>Fox Village</u></h1></div>
+                <div id="imageD"><img src="fox_village_files/image/test_la_hautD.png">
+                </div>
+            </div>    
+            <div id="gauche2-gosse"><a href="#caracteristique">Caractéristiques</a>
+            </div>
+            
+            <div id="droite2-gosse"><a href="#CARTE">Position</a>
+            </div> 
+        </div>
+        <div id="TOUT">
+            <div id="ENTETE">
+                <h1 class="titre" id="titre_entete"><strong>Fox village</strong></h1>
+                <p id="texte_entete">字川原子-11-3 Fukuokayatsumiya, Shiroishi, <e>Miyagi Prefecture 989-0733, Japon</e></p>
+            </div>
+            <div class="CONTENU">
+                <div id="histoire"> 
+                    <h2>Histoire du lieu :</h2>
+                    <p class="texte">Situé près de la ville de <span>Shiroishi</span> dans les montagnes de Miyagi, au Japon, le village de <span>Zao Fox (Zao Kitsune Mura)</span> est un paradis pour les amoureux du renard. Ouvert depuis 1990, le village est un sanctuaire pour plus d'une centaine d'animaux, dont <span>six races</span> différentes de renards qui se déplacent librement.<br><br>
+                            
+                        Les renards au Japon sont tenus en haute estime. Bien qu'ils apparaissent souvent dans le folklore comme des escrocs malicieux, ils sont également décrits comme des esprits puissants ou les messagers d'Inari Okami, la divinité shinto de la fertilité, de la prospérité, du riz, du thé et de l'agriculture.<br><br>
+                        Les visiteurs peuvent visiter un zoo pour enfants lapin, des écuries et un espace clos où sont gardés des renards blessés et de jeunes renards pour leur propre sécurité. 
+                        L'attraction principale, toutefois, est la vaste réserve préservée où les renards marchent, jouent, mangent et dorment. Beaucoup de renards approchent les humains avec curiosité, désireux d'être nourris ou caressés, mais les visiteurs doivent garder à l'esprit que ces adorables créatures sont encore à moitié sauvages et peuvent donc mordre si elles sont provoquées.</p>
+                </div>
+                <div id="renard_qui_marche">
+                    <marquee  align="center" direction="right" scrollamount="15" id="traverse">
+                        <img src="fox_village_files/image/renard_marche_png.gif" height="530" width="750" alt="renard qui court">
+                        <img src="fox_village_files/image/Capture.PNG" alt="joke">
+                    </marquee>
+                </div>
+                <div id="caracteristique">
+                    <h2>Caractéristiques des renards :</h2>
+                    <p class="texte">Les renards (ou goupils) sont des cannidés étalés sur la quasi totalité de l'hémisphère Nord. Ils sont reconnaissables grâce à leur pelage (le renard roux est l'espèce avec le plus d'individus d'où l'assimilation du renard qui est roux), leur gueule avec ce museau fin et leur queue touffue. Le renard chasse surtout les oiseaux et les petits mammifères dont ses proies favorites sont le lapin et le campagnole. Il chasse très souvent la nuit et ne se déplace jamais en groupe.</p>
+                        <div id="audio">
+                            <p>glapissement d'un renard</p>
+                            <center><audio controls="controls" preload="auto">
+                                <!-- couple renard qui glapit-->
+                                <source src="fox_village_files/son/cri_renard_roux.mp3">
+                                <source src="fox_village_files/son/cri_renard_roux.ogg">
+                                <source src="fox_village_files/son/cri_renard_roux.wav">
+                            </audio></center>
+                        </div>
+                    
+                    <a href="https://fr.wikipedia.org/wiki/Renard#Noms_en_fran%C3%A7ais_et_noms_scientifiques_correspondants" target="_blank">Toutes les espèces</a>
+                </div>
+                <div id="tarif">
+                    <table id="tableau">
+                        <thead>
+                            <tr>
+                                <th colspan="2"><h2><center>Les tarifs :</center></h2></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Adultes (13 ans et plus)</th>
+                                <td><center>1000¥(Yen) (=7.95€)</center></td>
+                            </tr>
+                            <tr>
+                                <th>Enfants (12 ans et moins)</th>
+                                <td><center>Free (Gratuit)</center></td>
+                            </tr>
+                            <tr>
+                                <th>Alimentation animale (facultatif)</th>
+                                <td><center>100¥(Yen) (=0.80€)</center></td>
+                            </tr>
+                        </tbody>
+                    </table>  
+                </div>
+            </div>
+            <div id="GALERIE">
+                    <div id="images"><center>
+                        <span id="un" class="target"></span>
+                        <span id="deux" class="target"></span>
+                        <span id="trois" class="target"></span>
+                        <span id="quatre" class="target"></span>
+                        <div class="cadre_diapo">
+                            <div class="interieur_diapo">
+                                <div class=cadre_img>
+                                    <div class=description>Entrée du "Fox Village"</div>
+                                    <img src="fox_village_files/image/z_galerie4.jpg" alt="porte d'entrée de la reserve">
+                                </div>
+                                <div class=cadre_img>
+                                    <div class=description>Plusieurs espèces de renards</div>
+                                    <img src="fox_village_files/image/z_galerie3.jpg" alt>
+                                </div>
+                                <div class=cadre_img>
+                                    <div class=description>aggroupement de renards</div>
+                                    <img src="fox_village_files/image/z_galerie2.jpg" alt>
+                                </div>
+                                <div class=cadre_img>
+                                    <div class=description>Maisonnette pour renards</div>
+                                    <img src="fox_village_files/image/z_galerie1.jpg" alt>
+                                </div>
+                            </div>
+                            <ul class="navigation_diapo">
+                                <li>
+                                    <a href="#un"><img class="zoom" src="fox_village_files/image/z_galerie4.jpg" alt></a>
+                                </li>
+                                <li>
+                                    <a href="#deux"><img class="zoom" src="fox_village_files/image/z_galerie3.jpg" alt></a>
+                                </li>
+                                <li>
+                                    <a href="#trois"><img class="zoom" src="fox_village_files/image/z_galerie2.jpg" alt></a>
+                                </li>
+                                <li>
+                                    <a href="#quatre"><img class="zoom" src="fox_village_files/image/z_galerie1.jpg" alt></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        </center></div>
+                </div>
+            <div id="CARTE">
+                <div id="tableau_carte">
+                    <table>
+                        <tr>
+                            <th width=50% class="tab_carte"><center><strong>VILLES</strong></center></th>
+                            <td></td>
+                            <th width=50% class="tab_carte"><center><strong>DISTANCE<br>(à vol d'oiseau)</strong></center></th>
+                        </tr>
+                        <tr>
+                            <td><center>SENDAI</center></td>
+                            <td></td>
+                            <td><center>30 Km</center></td>
+                        </tr>
+                        <tr>
+                            <td><center>TOKYO</center></td>
+                            <td></td>
+                            <td><center>270 Km</center></td>
+                        </tr>
+                        <tr>
+                            <td><center>OSAKA</center></td>
+                            <td></td>
+                            <td><center>587 Km</center></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="mapid"></div>
+                    <script src="fox_village.js" charset="utf-8"></script>
+            </div>
+        </div>
+        <div id="pied">
+            <p id="texte_bot">Site web
+réalisé par <strong><u>HOUZIAUX Julien</u></strong> dans le cadre d’un TP.</p>
+        </div>
+    </body>
+</html>
+
+
+
+
+<!--  JAVASCRIPT
+    ALT POUR LES IMAGES
+    DIV AUDIO AVEC FLEX
+    IMAGE RENARD A COTE AUDIO-->
+
+
+<!--    A FAIRE:
+        EN DESSOUS TARIF= lien site et departemnt
+        ADAPTER STYLE DES ZONES (comme on veut)
+        
+        GALERIE:
+            DOIT AVOIR SOUS TITRE
+            4 IMAGES MIN (6 A METTRE, ON ESSAIE)
+            DOIT FAIRE 980PX DE LARGE
+        
+        GEOGRA:
+            sous titre
+            doit faire 980px
+            2 parties cote a cote:
+                (1/3 de 980px) tableau de distance (km) a 3 ou 4 grande villes
+                (2/3 de 980px) carte leaflet avec marker sur ville et infobulle
+            style comme on veut
+
+        PIED:
+            texte a 40px de haut et bas
+
+        RESPONSIVE
+-->
